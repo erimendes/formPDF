@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF to CSV</title>
+</head>
+<body>
+    <h1>PDF to CSV Converter</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="pdf_file" accept=".pdf" required>
+        <button type="submit">Convert</button>
+    </form>
+
+    {% if csv_file %}
+    <p>CSV file generated: <a href="{{ csv_file }}" download>Download CSV</a></p>
+    {% endif %}
+
+    {% if qr_codes %}
+    <p>QR Codes encontrados: {{ qr_codes }}</p>
+    {% endif %}
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+</body>
+</html>

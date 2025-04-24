@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de Arquivos de Questões</title>
+</head>
+<body>
+    <h1>Selecione um arquivo TXT com as questões</h1>
+    <form method="POST" action="/gerar_arquivos" enctype="multipart/form-data">
+        <input type="file" name="arquivo" required>
+        <input type="submit" value="Gerar PDF, JSON e TXT">
+    </form>
+</body>
+</html>

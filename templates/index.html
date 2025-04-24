@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de PDF para TXT</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        #output { margin-top: 20px; border: 1px solid #ccc; padding: 10px; white-space: pre-wrap; }
+        input[type="file"] { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Conversor de PDF para TXT</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label for="pdf">Escolha um arquivo PDF:</label><br>
+        <input type="file" id="pdf" name="pdf" accept="application/pdf"><br><br>
+        <button type="submit">Converter para Texto</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script>
+        // Função que envia o arquivo PDF para o servidor e exibe o texto
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let formData = new FormData();
+            formData.append("pdf", document.getElementById('pdf').files[0]);
+
+            fetch('/converter', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.texto) {
+                    document.getElementById('output').textContent = data.texto;
+                } else {
+                    document.getElementById('output').textContent = 'Erro: ' + data.error;
+                }
+            })
+            .catch(error => {
+                document.getElementById('output').textContent = 'Erro ao processar o arquivo.';
+            });
+        });
+    </script>
+</body>
+</html>
