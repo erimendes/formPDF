@@ -1,13 +1,6 @@
 from flask import Flask, request, send_file, render_template_string
-import os
-import qrcode
 from fpdf import FPDF
-import shutil
 import unicodedata
-import json
-from utils import filtrar_questoes_conteudo  # Importe a função de filtragem
-
-app = Flask(__name__)
 
 # Importe a função de processamento de questões do segundo arquivo
 from processamento import processar_txt
@@ -17,6 +10,8 @@ from geradores.gerar_pdf_com_layout import gerar_pdf_com_layout
 from geradores.gerar_pdf_com_resposta import gerar_pdf_com_resposta
 from geradores.gerar_json import gerar_json
 from geradores.gerar_txt import gerar_txt
+
+app = Flask(__name__)  # Descomente esta linha para inicializar a aplicação Flask
 
 def remover_caracteres_especiais(texto):
     return unicodedata.normalize('NFKD', texto).encode('latin-1', 'ignore').decode('latin-1')
@@ -33,6 +28,8 @@ def filtrar():
     if not arquivo.filename.endswith('.txt'):
         return 'Apenas arquivos .txt são permitidos.', 400
     conteudo = arquivo.read().decode('utf-8')
+    # Assumindo que 'filtrar_questoes_conteudo' está definido em 'utils.py' e importado corretamente
+    from utils import filtrar_questoes_conteudo
     questoes_filtradas = filtrar_questoes_conteudo(conteudo)
     output_path = 'questoes_filtradas.txt'
     with open(output_path, 'w', encoding='utf-8') as f:
