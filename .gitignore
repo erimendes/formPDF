@@ -1,1 +1,8 @@
 env
+.idea/
+*.log
+venv/
+build/
+dist/
+projeto/__pycache__/
+projeto/geradores/__pycache__

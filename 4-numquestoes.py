@@ -59,7 +59,9 @@ def processar_txt(conteudo):
             "gabarito": gabarito
         })
 
+    questoes.sort(key=lambda q: q['cabecalho'].lower())  # ordena por cabecalho
     return questoes
+
 
 def gerar_pdf_com_layout(questoes, nome_pdf):
     pdf = FPDF()
