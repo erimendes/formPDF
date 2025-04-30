@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador e Filtrador de Arquivos de Questões</title>
+</head>
+<body>
+    <h2>Filtrar Questões de Concurso</h2>
+    <form action="/filtrar" method="post" enctype="multipart/form-data">
+        <label for="arquivo_filtrar">Escolha o arquivo .txt para filtrar:</label><br><br>
+        <input type="file" id="arquivo_filtrar" name="arquivo" accept=".txt"><br><br>
+        <input type="submit" value="Filtrar Questões">
+    </form>
+
+    <hr>
+
+    <h2>Gerar Arquivos de Questões (PDF, JSON, TXT)</h2>
+    <form action="/gerar_arquivos" method="post" enctype="multipart/form-data">
+        <label for="arquivo_gerar">Escolha o arquivo .txt com as questões:</label><br><br>
+        <input type="file" id="arquivo_gerar" name="arquivo" accept=".txt"><br><br>
+        <input type="submit" value="Gerar Arquivos">
+    </form>
+</body>
+</html>

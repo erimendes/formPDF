@@ -1,0 +1,49 @@
+----------
+www.tecconcursos.com.br/questoes/2775632
+CEBRASPE (CESPE) - Ana CT I (CNPq)/CNPq/Administração e Recursos Logísticos/2024
+Administração Geral e Pública - Gestão por Processos (BPM CBOK, Ciclo PDCA, 6 Sigma etc.)
+1 - Acerca das características básicas das organizações modernas, do processo organizacional, da gestão de processos e gestão da qualidade, julgue o item a seguir. Os processos finalísticos estão vinculados às atividades-fim da organização e, por isso, não podem ser classificados como processos críticos, pois são de natureza estratégica para o sucesso organizacional.
+Certo
+Errado
+Gabarito: Errado
+----------
+
+----------
+www.tecconcursos.com.br/questoes/1647006
+FCC - TJ TRT11/TRT 11/Administrativa/"Sem Especialidade"/2024
+Administração Geral e Pública - Gestão por Processos (BPM CBOK, Ciclo PDCA, 6 Sigma etc.)
+2 - Dentro da Administração Pública, a gestão de processos possui a característica de
+a)  simulação, que testa projetos e fluxos antes de torná-los definitivos.
+b)  redirecionamento, que repensa o fluxo de trabalho.
+c)  documentação, que entrega valor, à empresa.
+d)  monitoramento, que registra um conjunto de práticas organizacionais.
+e)  modelação, que consiste no redesenho de fluxos de trabalho.
+Gabarito: E
+----------
+
+----------
+www.tecconcursos.com.br/questoes/2773671
+FGV - Ana GM (Pref SJC)/Pref SJC/Administração de Empresas/2024
+Administração Geral e Pública - Gestão por Processos (BPM CBOK, Ciclo PDCA, 6 Sigma etc.)
+3 - A gestão por processos foi desenvolvida com a finalidade de eliminar barreiras entre os setores de uma organização, permitindo uma interação mais orgânica no desenvolvimento de seus serviços e produtos. Pautando-se nesse conceito, metodologias foram criadas para aprimorar esse projeto e, visando facilitar as análises, os processos foram divididos em diferentes categorias. Das diferentes categorias de processo, aqueles que permitem medir, controlar e avaliar as outras atividades pertencem à categoria de processos
+a)  primários.
+b)  gerenciais.
+c)  de suporte.
+d)  centrais.
+e)  de apoio.
+Gabarito: B
+----------
+
+----------
+www.tecconcursos.com.br/questoes/3228275
+FGV - Aud (CAGE RS)/SEFAZ RS/2025
+Administração Geral e Pública - Gestão por Processos (BPM CBOK, Ciclo PDCA, 6 Sigma etc.)
+4 - Uma gestão que tem como foco a melhoria dos processos organizacionais da administração pública preenche um pré- requisito na busca pela excelência gerencial. Considerando essa afirmação, assinale a opção que apresenta um exemplo de ferramenta que amplia uma simples técnica de avaliação e que viabiliza a consecução do referido pré-requisito.
+a)  O ciclo PDCA ou ciclo de Shewart.
+b)  A análise cíclica OKR (Objective and Key Results).
+c)  Aplicação do Balanced Scorecard (BSC).
+d)  A aplicação do modelo de Governo Eletrônico (e-GOV).
+e)  O modelo da Organização da Sociedade Civil de Interesse Público (OSCIP).
+Gabarito: A
+----------
+
