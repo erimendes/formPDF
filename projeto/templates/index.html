@@ -20,5 +20,14 @@
         <input type="file" id="arquivo_gerar" name="arquivo" accept=".txt"><br><br>
         <input type="submit" value="Gerar Arquivos">
     </form>
+
+    <hr>
+
+    <h2>Converter PDF para TXT</h2>
+    <form action="/converter" method="post" enctype="multipart/form-data">
+        <label for="pdf_converter">Escolha o arquivo .pdf para converter:</label><br><br>
+        <input type="file" id="pdf_converter" name="pdf" accept=".pdf"><br><br>
+        <input type="submit" value="Converter para TXT">
+    </form>
 </body>
 </html>
